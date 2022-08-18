@@ -1,0 +1,19 @@
+{
+  "name": "ts-node-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/calculator.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sl-config": "node C:/Projects/SL.OnPremise.Agent.JavaScript/tsOutputs/cli-parse/cli.js config --tokenfile sltoken.txt --appname \"ts-node-calculator\" --branch \"master\" --build \"2\"",
+    "sl-scan": "npx cross-env SL_fileExtensions=.ts node C:/Projects/SL.OnPremise.Agent.JavaScript/tsOutputs/cli-parse/cli.js scan --tokenfile sltoken.txt --buildsessionidfile buildSessionId --workspacepath \"./lib\" --scm git",
+    "sl-unit-test": "node C:/Projects/SL.OnPremise.Agent.JavaScript/tsOutputs/cli-parse/cli.js mocha --tokenfile sltoken.txt --buildsessionidfile buildSessionId --teststage mocha-ts -- -r ts-node/register --recursive test/**/*"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

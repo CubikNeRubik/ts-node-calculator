@@ -1,0 +1,16 @@
+{
+  "uncovered": {
+    "methods": 0,
+    "branches": 5
+  },
+  "total": {
+    "methods": 4,
+    "branches": 5
+  },
+  "testEvents":{
+    "executions": 1,
+    "tests": 4,
+    "passed": ["should add","should sub", "should divide", "should multiple"],
+    "skipped": []
+  }
+}
